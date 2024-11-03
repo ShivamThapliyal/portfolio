@@ -33,3 +33,8 @@ function About() {
 }
 
 export default About;
+
+//  Hello, my name is Gautam Sajwan, currently a final-year B.Tech student at Graphic Era Hill University. My passion lies in leveraging technology and coding to innovate and solve real-world problems.
+//  Proficient in languages such as C++, JavaScript, C, and Java, I also have a solid foundation in Python and SQL. With a keen interest in Full Stack Web Development, I have gained extensive experience in frontend and backend technologies/frameworks including React.js, Tailwind CSS, Next.js, Express.js, MongoDB, Typescript and WebSockets.
+//  Additionally, I possess strong skills in Data Structures and Algorithms, enabling me to efficiently tackle complex problems. I am deeply committed to continuous learning and growth, always seeking new opportunities to expand my knowledge and expertise.
+//  Eager to embark on exciting projects and overcome challenges, I am enthusiastic about collaborating with others to create impactful solutions. Let's connect and build something great together!
