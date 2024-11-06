@@ -20,7 +20,7 @@ const fadeInUpAnimation = {
 function Home() {
   const [text, settext] = useState("");
   const [istyping, setistyping] = useState(true);
-  const fulltext = "FullStack Developer";
+  const fulltext = "FullStack Developer.";
 
   useEffect(() => {
     let index = 0;
@@ -31,7 +31,6 @@ function Home() {
       } else {
         setistyping(false);
         setTimeout(() => {
-          //   settext("A");
           index = 0;
           setistyping(true);
         }, 1000);
@@ -54,7 +53,20 @@ function Home() {
         variants={fadeInUpAnimation}
         className="flex flex-col items-center p-5 gap-14"
       >
-        <motion.div variants={fadeInUpAnimation}>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+            scale: {
+              type: "spring",
+              damping: 5,
+              stiffness: 100,
+              restDelta: 0.001,
+            },
+          }}
+        >
           <img
             src={assets.shivam}
             alt=""
