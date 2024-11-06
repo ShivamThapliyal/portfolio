@@ -1,17 +1,27 @@
 import React from "react";
 import { assets } from "../../../assets/Images/assets";
+import { motion } from "framer-motion";
 
 function About() {
   return (
-    <div className="bg-black flex items-center justify-center  p-5 w-full h-[calc(100vh-105px)] text-white ">
-      <div className="p-2">
+    <div className="bg-black  flex items-center justify-center  p-5 w-full h-[calc(100vh-105px)] text-white ">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className="p-2"
+      >
         <img src={assets.shivam} alt="" className="rounded-lg w-[300px]" />
-      </div>
-      <div className=" flex flex-col items-center w-1/2  ">
-        <div className="mr-96 mt-6 pr-10">
+      </motion.div>
+      <div className="flex flex-col items-center w-1/2 ">
+        <div className="pr-10 mt-6 mr-96">
           <h2 className="text-2xl font-semibold tracking-widest">ABOUT ME</h2>
         </div>
-        <div className="p-6 ml-14 tracking-wider leading-loose text-base ">
+        <div className="p-6 text-base leading-loose tracking-wider ml-14 ">
           <p className="mb-4">
             Hello! I’m a final-year Computer Science and Engineering student at
             Graphic Era Hill University, Dehradun. I’m passionate about building

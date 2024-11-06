@@ -16,6 +16,16 @@ function Navbar() {
                 `${isActive ? "text-orange-500" : ""}`
               }
             >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to={"/About"}
+              className={({ isActive }) =>
+                `${isActive ? "text-orange-500" : ""}`
+              }
+            >
               About Me
             </NavLink>
           </li>
@@ -64,12 +74,22 @@ function Navbar() {
             />
           </div>
         ) : (
-          <div className="flex justify-center items-center  p-4 ">
+          <div className="flex items-center justify-center p-4 ">
             <div className="absolute top-[38%] left bg-white p-7 mr-52 z-10 w-44 rounded-xl bg-opacity-80">
-              <ul className="flex flex-col gap-3 text-gray-500 text-lg p-4 text-center">
+              <ul className="flex flex-col gap-3 p-4 text-lg text-center text-gray-500">
                 <li>
                   <NavLink
                     to={"/"}
+                    className={({ isActive }) =>
+                      `${isActive ? "text-orange-500" : ""}`
+                    }
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to={"/About"}
                     className={({ isActive }) =>
                       `${isActive ? "text-orange-500" : ""}`
                     }

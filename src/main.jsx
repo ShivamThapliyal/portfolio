@@ -12,11 +12,13 @@ import About from "./components/Pages/About/About.jsx";
 import Contact from "./components/Pages/Contact/Contact.jsx";
 import Projects from "./components/Pages/Projects/Projects.jsx";
 import Skills from "./components/Pages/Skills/Skills.jsx";
+import Home from "./components/Pages/Home/Home.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route path="/" element={<About />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/About" element={<About />} />
       <Route path="/Skills" element={<Skills />} />
       <Route path="/Projects" element={<Projects />} />
       <Route path="/Contact" element={<Contact />} />

@@ -3,11 +3,27 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "custom-gradient":
-          "linear-gradient(180deg, rgba(0, 0, 0, 8) 50%, transparent)",
+      animation: {
+        "gradient-animation": "gradient-animation 1s ease infinite",
+      },
+      keyframes: {
+        "gradient-animation": {
+          "0%": {
+            backgroundPosition: "0% 50%",
+          },
+          "50%": {
+            backgroundPosition: "100% 50%",
+          },
+          "100%": {
+            backgroundPosition: "0% 50%",
+          },
+        },
+      },
+      backgroundSize: {
+        200: "200% 200%",
       },
     },
   },
+
   plugins: [],
 };
