@@ -46,12 +46,12 @@ function Home() {
   }, [istyping]);
 
   return (
-    <div className="bg-black  flex flex-col items-center  gap-14 p-5 w-full h-[calc(100vh-105px)] text-white ">
+    <div className=" bg-black items-center gap-2 sm:bg-black  sm:flex sm:flex-col sm:items-center  sm:gap-14  sm:p-5 sm:w-full  sm:h-[calc(100vh-105px)] text-white ">
       <motion.div
         initial="hidden"
         animate="show"
         variants={fadeInUpAnimation}
-        className="flex flex-col items-center p-5 gap-14"
+        className="flex flex-col items-center gap-5 sm:flex sm:flex-col sm:items-center sm:gap-14"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -70,13 +70,13 @@ function Home() {
           <img
             src={assets.shivam}
             alt=""
-            className="rounded-[50%] w-[150px] shadow-xl shadow-gray-400/100 "
+            className=" rounded-[50%] w-[100px] shadow-none sm:rounded-[50%] sm:w-[150px] sm:shadow-xl sm:shadow-gray-400/100 "
           />
         </motion.div>
-        <div className="flex flex-col gap-2 text-2xl leading-loose tracking-widest text-center text">
+        <div className="flex flex-col text-center sm:flex sm:flex-col ">
           <motion.h1
             variants={fadeInUpAnimation}
-            className="text-6xl font-extrabold text"
+            className="text-3xl font-extrabold leading-loose tracking-widest sm:text-6xl sm:font-extrabold sm:leading-loose sm:tracking-widest"
           >
             Hi,
             <span className="font-medium text-transparent bg-gradient-to-r from-purple-400 to-red-600 bg-clip-text animate-gradient-animation">
@@ -84,7 +84,12 @@ function Home() {
             </span>
             Here.
           </motion.h1>
-          <motion.h2 variants={fadeInUpAnimation}>{text}</motion.h2>
+          <motion.h2
+            variants={fadeInUpAnimation}
+            className="text-xl font-extrabold leading-loose tracking-wider sm:text-2xl sm:font-extrabold sm:leading-loose sm:tracking-wider"
+          >
+            {text}
+          </motion.h2>
         </div>
 
         <motion.div
