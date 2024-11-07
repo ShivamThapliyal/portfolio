@@ -73,7 +73,7 @@ function Home() {
             className=" rounded-[50%] w-[100px] shadow-none sm:rounded-[50%] sm:w-[150px] sm:shadow-xl sm:shadow-gray-400/100 "
           />
         </motion.div>
-        <div className="flex flex-col gap-4 text-center sm:flex sm:flex-col ">
+        <div className="flex flex-col gap-4= text-center sm:flex sm:flex-col ">
           <motion.h1
             variants={fadeInUpAnimation}
             className="text-2xl font-extrabold leading-loose tracking-widest sm:text-6xl sm:font-extrabold sm:leading-loose sm:tracking-widest"
