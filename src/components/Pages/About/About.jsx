@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 function About() {
   return (
-    <div className=" bg-black flex flex-col text-white w-full p-2  items-center h-[calc(100vh-105px)] sm:bg-black  sm:flex sm:items-center sm:justify-center  sm:p-5 sm:w-full sm:h-[calc(100vh-105px)] sm:text-white ">
-      <div className="flex flex-col items-center w-full gap-3 p-3 sm:flex sm:flex-col sm:items-center sm:w-1/2 ">
-        <div className="mt-3 sm:pr-10 sm:mt-6 sm:mr-96">
+    <div className=" bg-black flex flex-col text-white w-full p-2  items-center h-[calc(100vh-105px)] sm:bg-black  sm:flex sm:flex-row sm:items-center sm:justify-center  sm:p-5 sm:w-full sm:h-[calc(100vh-105px)] sm:text-white ">
+      <div className="flex flex-col items-center w-full gap-3 p-3 sm:w-1/2 ">
+        <div className="mt-3 sm:pr-10 sm:mt-6 sm:mr-80">
           <h2 className="text-2xl font-semibold tracking-widest underline">
             ABOUT ME
           </h2>
@@ -20,7 +20,7 @@ function About() {
             interfaces, honing my skills in JavaScript, React, Node.js, and
             Tailwind CSS.
           </p>
-          <p className="hidden sm:block">
+          <p className="hidden text-sm font-extrabold leading-7 tracking-widest sm:block">
             My experience includes building responsive UIs, implementing complex
             functionalities, and optimizing performance. I strive to create
             seamless digital experiences that not only look great but also
