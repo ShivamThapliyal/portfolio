@@ -46,12 +46,12 @@ function Home() {
   }, [istyping]);
 
   return (
-    <div className=" bg-black items-center gap-2 sm:bg-black  sm:flex sm:flex-col sm:items-center  sm:gap-14  sm:p-5 sm:w-full  sm:h-[calc(100vh-105px)] text-white ">
+    <div className=" bg-black items-center h-[calc(100vh-105px)] gap-2 sm:bg-black  sm:flex sm:flex-col sm:items-center  sm:gap-14  sm:p-5 sm:w-full  sm:h-[calc(100vh-105px)] text-white ">
       <motion.div
         initial="hidden"
         animate="show"
         variants={fadeInUpAnimation}
-        className="flex flex-col items-center gap-5 sm:flex sm:flex-col sm:items-center sm:gap-14"
+        className="flex flex-col items-center gap-12 p-2 sm:flex sm:flex-col sm:items-center sm:gap-14"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -73,10 +73,10 @@ function Home() {
             className=" rounded-[50%] w-[100px] shadow-none sm:rounded-[50%] sm:w-[150px] sm:shadow-xl sm:shadow-gray-400/100 "
           />
         </motion.div>
-        <div className="flex flex-col text-center sm:flex sm:flex-col ">
+        <div className="flex flex-col gap-4 text-center sm:flex sm:flex-col ">
           <motion.h1
             variants={fadeInUpAnimation}
-            className="text-3xl font-extrabold leading-loose tracking-widest sm:text-6xl sm:font-extrabold sm:leading-loose sm:tracking-widest"
+            className="text-2xl font-extrabold leading-loose tracking-widest sm:text-6xl sm:font-extrabold sm:leading-loose sm:tracking-widest"
           >
             Hi,
             <span className="font-medium text-transparent bg-gradient-to-r from-purple-400 to-red-600 bg-clip-text animate-gradient-animation">
