@@ -5,10 +5,10 @@ import { assets } from "../../assets/Images/assets";
 function Navbar() {
   const [change, setchange] = useState(true);
   return (
-    <div className="bg-black sticky top-0 max-w-full text-[#e5e5e5] flex  justify-between items-center py-5 px-[5%]">
-      <div class="flex  items-center gap-10  ">
+    <div className=" bg-black sticky max-w-full text-[#e5e5e5] flex  sm:bg-black sticky top-0 max-w-full text-[#e5e5e5] flex  justify-between items-center py-5 px-[5%]">
+      <div class="ml-[30px] sm:flex  items-center gap-10  ">
         <img src={assets.shivam_logo} alt="" class="w-[150px]" />
-        <ul class=" flex gap-[100px] list-none text-[18px] cursor-pointer ml-6 ">
+        <ul class="hidden sm:flex gap-[100px] list-none text-[18px] cursor-pointer ml-6 ">
           <li>
             <NavLink
               to={"/"}
@@ -63,7 +63,7 @@ function Navbar() {
       </div>
       <div>
         {change ? (
-          <div>
+          <div className=" sm:hidden">
             <img
               onClick={() => {
                 setchange(false);
